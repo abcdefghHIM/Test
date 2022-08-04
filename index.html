@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/icon.png" />
+    <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+    <script src="//unpkg.com/vue@3"></script>
+    <script src="//unpkg.com/element-plus"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            const App = {
+                data() {
+                    return{
+                        selected: ''
+                    }
+                }
+            };
+            const app = Vue.createApp(App);
+            app.use(ElementPlus);
+            app.mount("#app");
+        });
+    </script>
+</head>
+
+<body id="app">
+    <el-select v-model="selected" placeholder="please select your zone">
+        <el-option label="Zone two1" value="beijing1" />
+        <el-option label="Zone two2" value="beijing2" />
+        <el-option label="Zone two3" value="beijing3" />
+        <el-option label="Zone two4" value="beijing4" />
+        <el-option label="Zone two5" value="beijing5" />
+        <el-option label="Zone two6" value="beijing6" />
+        <el-option label="Zone two7" value="beijing7" />
+        <el-option label="Zone two8" value="beijing8" />
+        <el-option label="Zone two9" value="beijing9" />
+        <el-option label="Zone two10" value="beijing10" />
+        <el-option label="Zone two11" value="beijing11" />
+
+    </el-select>
+</body>
+
+</html>
